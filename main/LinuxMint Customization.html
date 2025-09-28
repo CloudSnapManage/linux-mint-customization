@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinuxMint Customization</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li>
+<ul>
+<li><a href="#🪄-cursor-theme-—-mcmojave">🪄 Cursor Theme — McMojave</a></li>
+<li><a href="#🧰-configuring-panel-and-applets">🧰 Configuring Panel and Applets</a></li>
+<li><a href="#📌-plank-dock-setup">📌 Plank Dock Setup</a></li>
+<li><a href="#🔍-albert-launcher-setup">🔍 Albert Launcher Setup</a></li>
+<li><a href="#📁-nautilus-as-default-file-manager">📁 Nautilus as Default File Manager</a></li>
+<li><a href="#🪟-terminal-transparency">🪟 Terminal Transparency</a></li>
+<li><a href="#🦊-firefox-theme-—-whitesur">🦊 Firefox Theme — WhiteSur</a></li>
+<li><a href="#🖥️-final-desktop-layout">🖥️ Final Desktop Layout</a></li>
+<li><a href="#🏁-final-thoughts">🏁 Final Thoughts</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <hr>
+<pre class=" language-markdown"><code class="prism  language-markdown"><span class="token title important"><span class="token punctuation">#</span> 🛠️ My Linux Mint Cinnamon Setup — macOS Big Sur Inspired Look</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 🖼️ Screenshot</span>
+
+Here’s how my desktop looks after all the customizations:
+
+<span class="token url">![Desktop Screenshot](images/screenshot.png)</span>
+
+
+
+This is my personal reference guide for setting up a <span class="token bold"><span class="token punctuation">**</span>macOS Big Sur–like desktop<span class="token punctuation">**</span></span> on Linux distributions that use the <span class="token bold"><span class="token punctuation">**</span>Cinnamon desktop environment<span class="token punctuation">**</span></span>, such as:
+
+<span class="token list punctuation">-</span> Linux Mint  
+<span class="token list punctuation">-</span> Feren OS  
+<span class="token list punctuation">-</span> OpenSUSE with Cinnamon  
+<span class="token list punctuation">-</span> Debian Cinnamon Flavor  
+<span class="token list punctuation">-</span> Fedora Cinnamon Spin  
+<span class="token list punctuation">-</span> Arch with Cinnamon  
+<span class="token list punctuation">-</span> Manjaro Cinnamon Edition  
+
+I wrote this for <span class="token bold"><span class="token punctuation">**</span>myself<span class="token punctuation">**</span></span> so that I don’t have to go through all the hassle again when setting it up next time.  
+Everything below is exactly how <span class="token bold"><span class="token punctuation">**</span>I like my Cinnamon desktop customized<span class="token punctuation">**</span></span>.
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 📦 What I Usually Do</span>
+
+<span class="token list punctuation">-</span> Final Result Preview  
+<span class="token list punctuation">-</span> Initial Setup  
+<span class="token list punctuation">-</span> Install GTK Theme - WhiteSur Light/Dark  
+<span class="token list punctuation">-</span> Install Icons Theme - WhiteSur Light/Dark  
+<span class="token list punctuation">-</span> Install Cursors Theme - McMojave  
+<span class="token list punctuation">-</span> Configure Panel and Applets  
+<span class="token list punctuation">-</span> Install and Configure Plank Dock  
+<span class="token list punctuation">-</span> Install and Configure Albert Launcher  
+<span class="token list punctuation">-</span> Install and Configure Conky Manager  
+<span class="token list punctuation">-</span> Do Some Additional Settings  
+<span class="token list punctuation">-</span> Install Nautilus and Set it as Default File Manager  
+<span class="token list punctuation">-</span> Make Terminal Transparent  
+<span class="token list punctuation">-</span> Setup Firefox Theme  
+<span class="token list punctuation">-</span> Arrange Desktop Icons  
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">##</span> ⚙️ Initial Setup &amp; Tweaks</span>
+
+The first few changes I always make before installing anything:
+
+<span class="token list punctuation">1.</span> In <span class="token bold"><span class="token punctuation">**</span>System Settings → Windows<span class="token punctuation">**</span></span>, I change the <span class="token bold"><span class="token punctuation">**</span>button layout<span class="token punctuation">**</span></span> from <span class="token bold"><span class="token punctuation">**</span>right to left<span class="token punctuation">**</span></span>.
+<span class="token list punctuation">2.</span> I update the <span class="token bold"><span class="token punctuation">**</span>Alt + Tab behavior<span class="token punctuation">**</span></span> to use <span class="token bold"><span class="token punctuation">**</span>Coverflow 3D<span class="token punctuation">**</span></span> for a more fluid window switcher.
+<span class="token list punctuation">3.</span> In <span class="token bold"><span class="token punctuation">**</span>Hot Corner settings<span class="token punctuation">**</span></span>, I set the <span class="token bold"><span class="token punctuation">**</span>top-left corner<span class="token punctuation">**</span></span> to <span class="token bold"><span class="token punctuation">**</span>Show Workspaces<span class="token punctuation">**</span></span>.
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 🧩 Extensions and Panel Customization</span>
+
+I install and configure a few extensions and panel tweaks right away:
+
+<span class="token list punctuation">-</span> Installed <span class="token bold"><span class="token punctuation">**</span>Transparent Panel<span class="token punctuation">**</span></span> extension.
+<span class="token list punctuation">-</span> Enabled it and set the <span class="token bold"><span class="token punctuation">**</span>transparency type<span class="token punctuation">**</span></span> to <span class="token code keyword" spellcheck="false">`Semi-transparent`</span>.
+<span class="token list punctuation">-</span> Disabled theme transparency within the extension’s settings.
+
+Then, I change my <span class="token bold"><span class="token punctuation">**</span>background wallpaper<span class="token punctuation">**</span></span> to a macOS Big Sur–style wallpaper.  
+
+📦 <span class="token url">[macOS Big Sur Wallpaper Pack](https://www.pling.com/p/1400125)</span>
+
+<span class="token hr punctuation">---</span>
+
+<span class="token title important"><span class="token punctuation">##</span> 🎨 GTK Theme — WhiteSur Light/Dark</span>
+
+I install the <span class="token bold"><span class="token punctuation">**</span>WhiteSur GTK theme<span class="token punctuation">**</span></span> to get the macOS Big Sur look:
+
+```bash
+git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+cd WhiteSur-gtk-theme
+./install.sh
+
+</code></pre>
+<p>📁 <a href="https://github.com/vinceliuice/WhiteSur-gtk-theme">WhiteSur GTK Theme Repository</a></p>
+<hr>
+<h2 id="🪄-cursor-theme-—-mcmojave">🪄 Cursor Theme — McMojave</h2>
+<p>I install the <strong>McMojave cursor theme</strong> for a polished macOS cursor feel:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">git</span> clone https://github.com/vinceliuice/McMojave-cursors.git
+<span class="token function">cd</span> McMojave-cursors
+<span class="token function">sudo</span> <span class="token function">cp</span> -r McMojave* /usr/share/icons/
+
+</code></pre>
+<p>📁 <a href="https://github.com/vinceliuice/McMojave-cursors">McMojave Cursors Repository</a></p>
+<hr>
+<h2 id="🧰-configuring-panel-and-applets">🧰 Configuring Panel and Applets</h2>
+<p>Here’s how I usually set up my panel and applets:</p>
+<ol>
+<li>
+<p>I <strong>move the panel to the top</strong>.</p>
+</li>
+<li>
+<p>I <strong>remove all pinned applications</strong> from it.</p>
+</li>
+<li>
+<p>I install the <strong>CinnaMenu applet</strong>, apply a custom logo, and rename it to <strong>Applications</strong>.</p>
+</li>
+<li>
+<p>I install a <strong>Weather applet</strong> and configure it manually:</p>
+<ul>
+<li>
+<p>Entered latitude, longitude, city, country, and timezone (<code>Asia/Kathmandu</code>).</p>
+</li>
+<li>
+<p>Used <strong>Open-Metro Data</strong> as the weather provider (does not require API keys).</p>
+</li>
+</ul>
+</li>
+<li>
+<p>I install:</p>
+<ul>
+<li>
+<p><strong>Expo Applet</strong> – Workspace manager.</p>
+</li>
+<li>
+<p><strong>Nepali Patro Calendar Desklet</strong> – <code>nepalipatro@deeppradhan</code></p>
+</li>
+<li>
+<p><strong>Scale Applet</strong> – Shows all open windows like an application switcher (<a href="https://cinnamon-spices.linuxmint.com/desklets/view/43">Scale Applet</a>)</p>
+</li>
+<li>
+<p><strong>User Applet</strong> – (no extra configuration needed)</p>
+</li>
+<li>
+<p><strong>Calendar Applet</strong> with a custom date format:</p>
+<pre><code>%A, %B %e, %Y  %I:%M:%S %p
+
+</code></pre>
+</li>
+</ul>
+</li>
+<li>
+<p>I position <strong>Weather</strong> and <strong>Calendar</strong> in the <strong>center top</strong> of the panel.</p>
+</li>
+</ol>
+<hr>
+<h2 id="📌-plank-dock-setup">📌 Plank Dock Setup</h2>
+<p>I install and configure <strong>Plank Dock</strong> for a macOS-style dock:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">sudo</span> apt <span class="token function">install</span> plank
+
+</code></pre>
+<p>📁 <a href="https://github.com/vinceliuice/WhiteSur-gtk-theme/tree/master/src/other/plank">WhiteSur Plank Theme Pack</a></p>
+<blockquote>
+<p>💡 Note: This is included in the WhiteSur GTK theme — no need to download separately, just for reference.</p>
+</blockquote>
+<ul>
+<li>
+<p>I copy the Plank theme from:</p>
+<pre><code>WhiteSur-Gtk/src/other/plank
+
+</code></pre>
+<p>to:</p>
+<pre><code>~/.local/share/plank/theme
+
+</code></pre>
+</li>
+<li>
+<p>Then, I select that theme from Plank settings.</p>
+</li>
+<li>
+<p>I also add Plank to the <strong>Startup Applications</strong> list so it launches automatically.</p>
+</li>
+</ul>
+<hr>
+<h2 id="🔍-albert-launcher-setup">🔍 Albert Launcher Setup</h2>
+<p>I install and configure <strong>Albert Launcher</strong> as a spotlight-style app launcher.</p>
+<p>📥 <a href="https://software.opensuse.org/download.html?project=home%3Amanuelschneid3r&amp;package=albert">Download Albert</a><br>
+🎨 <a href="https://store.kde.org/p/1410038/">Albert Theme</a></p>
+<blockquote>
+<p>💡 Note: I didn’t find a single perfect package, so this might require some trial and error — some builds will work for sure.</p>
+</blockquote>
+<ul>
+<li>
+<p>After installation, I copy the theme file to:</p>
+<pre><code>/usr/share/albert/
+
+</code></pre>
+</li>
+<li>
+<p>Then I select the theme from Albert’s preferences.</p>
+</li>
+<li>
+<p>I also make sure Albert is in the <strong>Startup Applications</strong> list.</p>
+</li>
+</ul>
+<hr>
+<h2 id="📁-nautilus-as-default-file-manager">📁 Nautilus as Default File Manager</h2>
+<p>I prefer Nautilus as my default file manager, so I install it with:</p>
+<pre class=" language-bash"><code class="prism  language-bash"><span class="token function">sudo</span> apt <span class="token function">install</span> nautilus
+
+</code></pre>
+<p>Then I set it as the default file manager in system settings.</p>
+<hr>
+<h2 id="🪟-terminal-transparency">🪟 Terminal Transparency</h2>
+<p>I make the terminal <strong>semi-transparent</strong> through its preferences settings.</p>
+<hr>
+<h2 id="🦊-firefox-theme-—-whitesur">🦊 Firefox Theme — WhiteSur</h2>
+<p>I change the <strong>Firefox browser theme</strong> following the guide from the GitHub repository:</p>
+<p>📁 <a href="https://github.com/vinceliuice/WhiteSur-gtk-theme/tree/master/src/other/firefox">WhiteSur Firefox Theme Guide</a></p>
+<blockquote>
+<p>💡 This is also included inside the same WhiteSur GTK theme folder — just search for it or follow the guide above.</p>
+</blockquote>
+<hr>
+<h2 id="🖥️-final-desktop-layout">🖥️ Final Desktop Layout</h2>
+<p>Finally, I <strong>arrange the desktop icons</strong> and align everything to achieve a clean, macOS-like layout.</p>
+<hr>
+<h2 id="🏁-final-thoughts">🏁 Final Thoughts</h2>
+<p>With all these steps, I transform my Cinnamon desktop into something that <strong>closely resembles macOS Big Sur</strong> — clean, elegant, and modern — while keeping the power and freedom of <strong>Linux</strong>.</p>
+<hr>
+<p>#macOSBigSur #Linux #OpenSource</p>
+<pre><code>
+---
+
+✅ **Why this version is better:**
+
+- Uses **proper `[text](link)`** formatting for easy HTML conversion.  
+- Clear blockquotes (`&gt; 💡`) for notes and tips — render beautifully in HTML and Markdown.  
+- Code blocks and links are consistently styled.  
+- Spacing is normalized for readability and export.  
+- Fully ready to drop into a `.md` file *or* convert directly with tools like `pandoc` or `markdown-it` to HTML.
+
+---
+
+Would you like me to add a **Table of Contents** section at the top (auto-linking to sections) too? (It makes the HTML version much easier to navigate.)
+
+</code></pre>
+
+    </div>
+  </div>
+</body>
+
+</html>
